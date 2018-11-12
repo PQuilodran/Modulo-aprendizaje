@@ -86,7 +86,22 @@
                       
   
         </header>
+<<<<<<< HEAD
   <nav>  
   </nav>
+=======
+  <nav> 
+   <ul id ="menu" >
+     <div class="links">
+                    <li href="https://laravel.com/docs">login </li>
+                    <li href="https://laracasts.com">register</li>
+                    <li href="Materias">Materias</li>
+                    <li href="https://nova.laravel.com">Comentarios</li>
+                    <li href="https://forge.laravel.com">Calificacions</li>
+                    <li href="https://github.com/laravel/laravel">Integracion</li>
+                </div>
+            </ul> 
+        </nav>
+>>>>>>> master
   <section>
   </section>
