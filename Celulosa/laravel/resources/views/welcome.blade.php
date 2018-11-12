@@ -87,10 +87,10 @@
                 <div class="links">
                     <a href="https://laravel.com/docs">login</a>
                     <a href="https://laracasts.com">register</a>
-                    <a href="https://laravel-news.com">Materias</a>
+                    <a href="Materias">Materias</a>
                     <a href="https://nova.laravel.com">Comentarios</a>
                     <a href="https://forge.laravel.com">Calificacions</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/laravel/laravel">Integracion</a>
                 </div>
             </div>
         </div>
