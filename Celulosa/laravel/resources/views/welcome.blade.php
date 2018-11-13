@@ -3,7 +3,7 @@
  <head>
   <title>Celulosa</title>
   <meta charset="UTF-8"/>
-  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <style>
    body {
     margin: 0px;
@@ -18,25 +18,25 @@
     height: 38%;
     font-family: 'Monoton', cursive;
    }
-   
+
    section{
     background-color: #2E9AFE;
     width: 100%;
     height: 100%;
    }
-   
+
    footer{
     background-color: #2E9AFE;
     width: 100%;
     height: 12%;
    }
-   
+
    #menu{
     margin: 0px;
     position:inherit;
     height: 100%;
-    
-   
+  }
+
    </style>
  </head>
  <body>
@@ -44,15 +44,19 @@
                 <br>
                 <br>
                 <br>
-           <li Style="font-size:30px"    href="https://laravel.com/docs">login </li>
+           <li  href="https://laravel.com/docs">login </li>
            <li href="https://laracasts.com">register</li>
-           
+
            <center><h1 style ="text-align:center ">Celulosa</h1></center>
-           
-                      
-  
+
+
+
         </header>
-  <nav>  
+      </head>
+
+  <nav>
   </nav>
   <section>
   </section>
+
+</body>
