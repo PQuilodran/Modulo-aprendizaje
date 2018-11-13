@@ -1,4 +1,12 @@
-<!doctype html>
+<?php  
+$con = @mysqli_connect('localhost', 'root', '', 'comentarios');
+
+if (!$con) {
+    echo "Error: " . mysqli_connect_error();
+    exit();
+}
+?>
+ <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -64,23 +72,53 @@
     </head>
     <body>
        <div class="container">	
-          <div class="row" style="margin-top: 5%;">
+          <div class="row" style="margin-top: 5%; margin-bottom: 5%">
             <div class="col-md-10">
                 <h2>
                   holaaaaa
                 </h2>
                 <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blablabla bla bla bla bla bla</p>
 
-                <div class="form-group">
-                	<label for="comennt">Comentarios</label>
-                	<textarea rows="5" name="coment" class="form-control"></textarea>
-                </div>	
-                <div class="form-group">
+                <label for="comennt">Comentarios</label>
+                <?php  
+                    echo "<meta charset='utf-8'>";
+                    $sql    = 'SELECT * FROM `comen` ORDER BY `comen`.`date` DESC';
+                    $query  = mysqli_query($con, $sql);
+                    while ($row = mysqli_fetch_array($query))
+                    {?>
+                        <div style="background-color:rgba(153, 243, 243,0.5); margin-top: 2%">
+                            <div class="panel-heading">Autor:
+                                <?php 
+                                if (empty($row['name'])) 
+                                    {
+                                        echo "anonymous";
+                                    }
+                                    else{
+                                        echo $row['com'];
+                                    }
+                                 ?>
+                            </div>
+                            <div class="panel-body">
+                            <label><?php echo $row['com']; ?></label>
+                            <p class="text-right"><?php echo $row['date']; ?></p>
+                            </div>
+
+                             
+                        </div>                      
+                        
+                    <?php } 
+                    ?>
+
+                
+                    <form class="form-group" action="guardar.php" method='POST'>
+                    <label for="comennt">Agregar comentario</label>
+                	<textarea type="text" rows="5" name="coment" id="coment" class="form-control"></textarea>
                 	<button type="submit" class="btn btn-primary">Enviar Comentario</button>
-                </div>
+                    </form>
 
             </div>
         </div>
     </div>
     </body>
 </html>
+<?php mysqli_close ($con); ?>
