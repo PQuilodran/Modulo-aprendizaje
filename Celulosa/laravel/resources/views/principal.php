@@ -90,7 +90,7 @@
 
         </header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="welcome.blade.php">Principal</a>
+          <a class="navbar-brand" href="principal.php">Principal</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -103,22 +103,14 @@
                 <a class="nav-link" href="editor">Bitacora</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Comentarios</a>
+                <a class="nav-link" href="prueba">Comentarios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Caficaciones</a>
+                <a class="nav-link disabled" href="profesores.html">Profesores</a>
               </li>
             </ul>
           </div>
         </nav>
-  <section>
-    <br>
-    <br>
-    <br>
-    <p > Bienvenido la bitaciora </p>
-    <form method="get" action="http://localhost/integracion/Modulo-aprendizaje/Celulosa/laravel/resources/views/editor">
-    <input type="submit" value="Ediccion de bitacora" />
-  </section>
 <br>
 
 
