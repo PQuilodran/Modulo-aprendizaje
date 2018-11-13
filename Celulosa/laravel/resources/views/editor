@@ -3,7 +3,80 @@
 <head>
 <meta charset="utf-8">
 <title>Content Editable</title>
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <style>
+  @import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+
+  .detailBox {
+      width:320px;
+      border:1px solid #bbb;
+      margin:50px;
+  }
+  .titleBox {
+      background-color:#fdfdfd;
+      padding:10px;
+  }
+  .titleBox label{
+    color:#444;
+    margin:0;
+    display:inline-block;
+  }
+
+  .commentBox {
+      padding:10px;
+      border-top:1px dotted #bbb;
+  }
+  .commentBox .form-group:first-child, .actionBox .form-group:first-child {
+      width:80%;
+  }
+  .commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+      width:18%;
+  }
+  .actionBox .form-group * {
+      width:100%;
+  }
+  .taskDescription {
+      margin-top:10px 0;
+  }
+  .commentList {
+      padding:0;
+      list-style:none;
+      max-height:200px;
+      overflow:auto;
+  }
+  .commentList li {
+      margin:0;
+      margin-top:10px;
+  }
+  .commentList li > div {
+      display:table-cell;
+  }
+  .commenterImage {
+      width:30px;
+      margin-right:5px;
+      height:100%;
+      float:left;
+  }
+  .commenterImage img {
+      width:100%;
+      border-radius:50%;
+  }
+  .commentText p {
+      margin:0;
+  }
+  .sub-text {
+      color:#aaa;
+      font-family:verdana;
+      font-size:11px;
+  }
+  .actionBox {
+      border-top:1px dotted #bbb;
+      padding:10px;
+  }
 #txtbox, #text {
 width:800px;
 height:400px;
@@ -50,4 +123,53 @@ document.getElementById('txtbox').focus();
 </div>
 <textarea id="text" name="text"></textarea>
 </body>
+<div class="detailBox">
+    <div class="titleBox">
+      <label>Comentarios</label>
+        <button type="button" class="close" aria-hidden="true">&times;</button>
+    </div>
+    <div class="commentBox">
+
+        <p class="taskDescription">Estos son los  comentarios de las personas</p>
+    </div>
+    <div class="actionBox">
+        <ul class="commentList">
+            <li>
+                <div class="commenterImage">
+                  <img src="http://placekitten.com/50/50" />
+                </div>
+                <div class="commentText">
+                    <p class="">Muy buena bitacora</p> <span class="date sub-text">12/11/2018</span>
+
+                </div>
+            </li>
+            <li>
+                <div class="commenterImage">
+                  <img src="http://placekitten.com/45/45" />
+                </div>
+                <div class="commentText">
+                    <p class="">Hola esto es un comentario </p> <span class="date sub-text"> 13/11/2018</span>
+
+                </div>
+            </li>
+            <li>
+                <div class="commenterImage">
+                  <img src="http://placekitten.com/40/40" />
+                </div>
+                <div class="commentText">
+                    <p class="">Hola como estas</p> <span class="date sub-text">13/12/2100</span>
+
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Tu comentario" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default">Añadir</button>
+            </div>
+        </form>
+    </div>
+</div>
 </html>
