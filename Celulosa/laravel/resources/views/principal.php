@@ -86,7 +86,15 @@
                       
   
         </header>
-  <nav>  
-  </nav>
+  <nav> 
+   <ul id ="menu" >
+     <div class="links">
+                    
+                    <li href="Materias">Materias</li>
+                    <li href="Comentarios">Comentarios</li>
+                    <li href="calificaciones">Calificacions</li>
+                </div>
+            </ul> 
+        </nav>
   <section>
   </section>
