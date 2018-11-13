@@ -84,7 +84,7 @@
                 <br>
 
 
-           <center><h1 style ="text-align:center ">Celulosa</h1></center>
+           <center><h1 style ="text-align:center ">Celulas de Aprendizaje</h1></center>
 
 
 
@@ -106,7 +106,7 @@
                 <a class="nav-link" href="prueba">Comentarios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="profesores.html">Profesores</a>
+                <a class="nav-link disabled" href="#">Profesores</a>
               </li>
             </ul>
           </div>

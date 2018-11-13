@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   <style>
    body {
     margin: 0px;
@@ -95,7 +96,7 @@
                 <br>
                 <br>
                 <br>
-           <center><h1 style ="text-align:center ">Materias</h1></center>
+           <center><h1 style ="text-align:center">Materias</h1></center>
 
 
         </header>
@@ -116,12 +117,27 @@
                 <a class="nav-link" href="prueba">Comentarios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="profesores.html">Profesores</a>
+                <a class="nav-link disabled" href="#">Profesores</a>
               </li>
             </ul>
           </div>
         </nav>
+
   <section>
+    <ul>
+  <li>MATEMATICA DISCRETAS </li>
+  <li>PROGRAMACION PARA SISTEMAS </li>
+  <li>ALGORITMOS Y ESTRUCTURA DE DATOS 	 </li>
+  <li>ESTRUCTURA DE COMPUTADORES 		 </li>
+  <li>ALGORITMICA NUMERICA 	</li>
+  <li>CONCURRENCIA</li>
+  <li>BASES DE DATOS</li>
+  <li>ARQUITECTURA DE COMPUTADORES 	</li>
+  <li>SISTEMAS OPERATIVOS REDES DE COMPUTADORES 	</li>
+  <li>FUNDAMENTOS DE ECONOMIA Y ADMINISTRACION DE EMPRESAS</li>
+  <li>FUNDAMENTOS DE GESTION DE TECNOLOGIAS DE LA INFORMACION EN EMPRESAS</li>
+  </ul>
+
 
 
 
