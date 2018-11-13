@@ -8,7 +8,7 @@
    body {
     margin: 0px;
     width: 100%;
-    height: 1000px;
+    height: 476px;
    }
    header {
     background-color: #2E9AFE;
@@ -18,19 +18,11 @@
     height: 38%;
     font-family: 'Monoton', cursive;
    }
-   nav{
-    background-color: #58ACFA;
-    width: 100%;
-    height: 5%;
-    font-family: 'Playfair Display SC', serif;
-    font-family: 'Handlee', cursive;
-    font-family: 'Gochi Hand', cursive;
-    font-family: 'Copse', serif;
-   }
+   
    section{
     background-color: #2E9AFE;
     width: 100%;
-    height: 225%;
+    height: 100%;
    }
    
    footer{
@@ -44,33 +36,7 @@
     position:inherit;
     height: 100%;
     
-   }
-   #menu li{
-    height: 50px; /* fondo del menu letras  */
-    width: 150px; /* tamaño del fondo letra menu  */
-    text-align: center;
-    float : left; 
-    margin-right:  25px;
-    line-height: 50px; /* corre hace abajo letra del menu */
-    background-color: #FFE4B5;  /* color fono de letra */
-    color: white;
-    font-size: 25px;
-    color: black;
-    list-style:none;
-   }
-   h1{
-    margin:  0px;
-   }
-   #contacto{
-    margin-top: 0px;
-   }
-   #contacto li{
-    list-style:none;
-   }
-   p{
-    font-size: 30px;
-    text-align: center;
-   }
+   
    </style>
  </head>
  <body>

@@ -3,7 +3,7 @@
  <head>
   <title>Celulosa</title>
   <meta charset="UTF-8"/>
-  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <style>
    body {
     margin: 0px;
@@ -32,24 +32,24 @@
     width: 100%;
     height: 225%;
    }
-   
+
    footer{
     background-color: #2E9AFE;
     width: 100%;
     height: 12%;
    }
-   
+
    #menu{
     margin: 0px;
     position:inherit;
     height: 100%;
-    
+
    }
    #menu li{
     height: 50px; /* fondo del menu letras  */
     width: 150px; /* tamaño del fondo letra menu  */
     text-align: center;
-    float : left; 
+    float : left;
     margin-right:  25px;
     line-height: 50px; /* corre hace abajo letra del menu */
     background-color: #FFE4B5;  /* color fono de letra */
@@ -80,21 +80,32 @@
                 <br>
            <li Style="font-size:30px"    href="https://laravel.com/docs">login </li>
            <li href="https://laracasts.com">register</li>
-           
+
            <center><h1 style ="text-align:center ">Celulosa</h1></center>
-           
-                      
-  
+
+
+
         </header>
-  <nav> 
+  <nav>
    <ul id ="menu" >
      <div class="links">
-                    
-                    <li href="Materias">Materias</li>
+
+                    <li href="http://localhost/integracion/Modulo-aprendizaje/Celulosa/laravel/resources/views/Materias">Materias</li>
                     <li href="Comentarios">Comentarios</li>
-                    <li href="calificaciones">Calificacions</li>
+                    <li href="calificaciones">Calificaciones</li>
                 </div>
-            </ul> 
+            </ul>
         </nav>
   <section>
+    <br>
+    <br>
+    <br>
+    <p > Bienvenido la bitaciora </p>
+    <form method="get" action="http://localhost/integracion/Modulo-aprendizaje/Celulosa/laravel/resources/views/editor">
+    <input type="submit" value="Ediccion de bitacora" />
   </section>
+<br>
+
+
+
+</body>
