@@ -3,7 +3,6 @@
  <head>
   <title>Celulosa</title>
   <meta charset="UTF-8"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <style>
    body {
@@ -85,28 +84,17 @@
 
 
         </header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="principal.php">Principal</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="Materias">Materias <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="editor">Bitacora</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="prueba">Comentarios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Profesores</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <nav>
+     <ul id ="menu" >
+       <hgroup>
+       <li Style="background-color:#DEB887;color:negro" href="principal.php">Principal</li>
+                    <li><a href="Materias">Materias</a></li>
+                    <li><a href="Bitaciora">Bitacora</a></li>
+                    <li><a href="#">Comentarios</a></li>
+                    <li><a href="#">Historial</a></li>
+                    </hgroup>
+              </ul>
+          </nav>
 <br>
 
 

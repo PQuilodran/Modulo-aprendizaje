@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulario</title>
+    <title>Registro</title>
     <meta charset="utf-8">
 
 </head>
 <style>
-</<style media="screen">
+
 div{
   style ="text-align:center "
 
 }
 </style>
-<body background="fondo.jpg">
+<body background="imagenes/fondo.jpg">
     <div id="registrar">
             <a href="#"a>Regresar</a>
     </div>
