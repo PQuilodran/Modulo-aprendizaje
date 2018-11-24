@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/bitacoras','BitacorasController');
+/*Route::get('/detalle', function () {
+    return view('detalle');
+});*/
