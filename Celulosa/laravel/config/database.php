@@ -33,6 +33,16 @@ return [
 
     'connections' => [
 
+        'mongodb' => [
+        'driver'   => 'mongodb',
+        'host'     => 'localhost',
+        'port'     => 27017,
+        'database' => 'DB_CELULAS_0',
+        //'username' => env('MONGO_DB_USERNAME'),
+        //'password' => env('MONGO_DB_PASSWORD'),
+        //'options'  => []
+        ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
