@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Content Editable</title>
+
+<style>
+#txtbox, #text {
+width:800px;
+height:400px;
+padding:10px;
+overflow:scroll;
+background:#EFEFEF;
+border:0px none;
+}
+#text {
+display:none;
+}
+button, input, select {
+background:#EFEFEF;
+border:#000000 none solid;
+}
+</style>
+<script>
+function init(x) {
+if (x=="h") {document.getElementById('txtbox').style.display='none';document.getElementById('text').style.display='block';}
+if (x=="s") {document.getElementById('txtbox').style.display='block';document.getElementById('text').style.display='none';}
+document.getElementById('text').value=document.getElementById('txtbox').innerHTML;
+if (x!="h" || x!="s") document.execCommand(x,false,null);
+document.getElementById('txtbox').focus();
+}
+</script>
+</head>
+<body>
+<div class="container">
+<p style="width:100%;height:auto;padding:10px;background:#EFEFEF">
+<button class="btn btn-default btn-sm" type="button" onclick="init('bold')">Negrita</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('italic')">Itálica</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('underline')">Subrayado</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('justifycenter')">Centrado</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('increasefontsize')">Fuente +</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('inserthorizontalrule')">Línea Hr.</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('redo')">Rehacer</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('undo')">Deshacer</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('s')">Vista Real</button>
+<button class="btn btn-default btn-sm" type="button" onclick="init('h')">Vista HTML</button>
+</p>
+<div id="txtbox" contenteditable="true" style="width: 100%;">
+<h2>Título</h2>
+<p>Escribe aquí ...</p>
+<p>Etc ...</p>
+</div>
+<textarea id="text" name="text"></textarea>
+
+
+<pdiv class="detailBox">
+    
+    <div class="actionBox">
+       <label for="comennt">Comentarios</label>
+                
+          <div style="background-color:rgba(153, 243, 243,0.5); margin-top: 2%">
+              
+          
+                             
+           </div>                      
+                        
+                
+      <form class="form-group" action="guardar.php" method='POST'>
+      <label for="comennt">Agregar comentario</label>
+      <textarea type="text" rows="5" name="coment" id="coment" class="form-control"></textarea>
+       <button type="submit" class="btn btn-primary " style="width: 15%">Enviar Comentario</button>
+       </form>
+    </div>
+</pdiv>
+</div>
+</html>
